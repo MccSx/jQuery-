@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .window {
+      width: 300px;
+      overflow: hidden;
+    }
+    .images {
+      display: flex;
+      align-items: flex-start;
+      transition: transform 0.5s;
+    }
+    .buttons {
+      padding-left: 60px;
+      margin-top: 10px;
+    }
+    .buttons>span {
+      display: inline-block;
+      padding: 0 5px;
+      border-radius: 50%;
+      background: #cccccc;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .buttons>.change {
+      background: #007aff;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="window">
+    <div class="images" id="images">
+      <img src="./img/1.jpg" alt="" width="300" height="200">
+      <img src="./img/2.jpg" alt="" width="300" height="200">
+      <img src="./img/3.jpg" alt="" width="300" height="200">
+      <img src="./img/4.jpg" alt="" width="300" height="200">
+    </div>
+  </div>
+  <div class="buttons" id="buttons">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </div>
+<script src="./main.js"></script>
+</body>
+</html>
